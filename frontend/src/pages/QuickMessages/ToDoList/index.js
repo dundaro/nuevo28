@@ -75,7 +75,7 @@ const ToDoList = () => {
       setTask('');
       setEditIndex(-1);
     } else {
-      // Adicionar nova tarefa
+      // Adicionar nueva tarea
       setTasks([...tasks, {text: task, createdAt: now, updatedAt: now}]);
       setTask('');
     }
@@ -97,7 +97,7 @@ const ToDoList = () => {
       <div className={classes.inputContainer}>
         <TextField
           className={classes.input}
-          label="Nova tarefa"
+          label="Nueva tarea"
           value={task}
           onChange={handleTaskChange}
           variant="outlined"
