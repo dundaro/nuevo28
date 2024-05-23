@@ -165,11 +165,11 @@ const SettingsCustom = () => {
           onChange={handleTabChange}
           className={classes.tab}
         >
-          <Tab label="Opções" value={"options"} />
+          <Tab label="Opciones" value={"options"} />
           {schedulesEnabled && <Tab label="Horários" value={"schedules"} />}
           {isSuper() ? <Tab label="Empresas" value={"companies"} /> : null}
-          {isSuper() ? <Tab label="Planos" value={"plans"} /> : null}
-          {isSuper() ? <Tab label="Ajuda" value={"helps"} /> : null}
+          {isSuper() ? <Tab label="Planes" value={"plans"} /> : null}
+          {isSuper() ? <Tab label="Ayuda" value={"helps"} /> : null}
           {isSuper() ? <Tab label="Whitelabel" value={"whitelabel"} /> : null}
           {isSuper() ? <Tab label="Pay Gateways" value={"paymentGateway"} /> : null}
         </Tabs>
