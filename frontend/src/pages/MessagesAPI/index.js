@@ -55,7 +55,7 @@ const MessagesAPI = () => {
     };
     
     axios.request(options).then(function (response) {
-      toast.success('Mensagem enviada com sucesso');
+      toast.success('Mensage enviado con exito');
     }).catch(function (error) {
       toastError(error);
     });    
@@ -79,7 +79,7 @@ const MessagesAPI = () => {
       };
       
       axios.request(options).then(function (response) {
-        toast.success('Mensagem enviada com sucesso');
+        toast.success('Mensage enviado con exito');
       }).catch(function (error) {
         toastError(error);
       });      
@@ -250,8 +250,8 @@ const MessagesAPI = () => {
       </Typography>
       <Typography component="div">
         <ol>
-          <li>Mensagens de Texto</li>
-          <li>Mensagens de Media</li>
+          <li>Mensage de Texto</li>
+          <li>Mensage de Media</li>
         </ol>
       </Typography>
       <Typography variant="h6" color="primary" className={classes.elementMargin}>
@@ -260,61 +260,61 @@ const MessagesAPI = () => {
       <Typography className={classes.elementMargin} component="div">
         <b>Observações importantes</b><br />
         <ul>
-          <li>Antes de enviar mensagens, é necessário o cadastro do token vinculado à conexão que enviará as mensagens. <br/>Para realizar o cadastro acesse o menu "Conexões", clique no botão editar da conexão e insira o token no devido campo.</li>
+          <li>Antes de enviar mensajes, es necesario registrar el token vinculado a la conexión que enviará los mensajes.. <br/>Para registrarse acceda al menú "Conexiones", haga clic en el botón editar conexión e inserte el token en el campo correspondiente.</li>
           <li>
-            O número para envio não deve ter mascara ou caracteres especiais e deve ser composto por:
+            El número de envío no debe tener máscara ni caracteres especiales y debe estar compuesto por:
               <ul>
-                <li>Código do país</li>
-                <li>DDD</li>
+                <li>Código de país</li>
+                <li>Cod. Ciudad</li>
                 <li>Número</li>
               </ul>
           </li>
         </ul>
       </Typography>
       <Typography variant="h6" color="primary" className={classes.elementMargin}>
-        1. Mensagens de Texto
+        1. Mensages de Texto
       </Typography>
       <Grid container>
         <Grid item xs={12} sm={6}>
           <Typography className={classes.elementMargin} component="div">
-            <p>Seguem abaixo a lista de informações necessárias para envio das mensagens de texto:</p>
+            <p>A continuación se muestra la lista de información necesaria para enviar mensajes de texto:</p>
             <b>Endpoint: </b> {getEndpoint()} <br />
             <b>Método: </b> POST <br />
-            <b>Headers: </b> X_TOKEN (token cadastrado) e Content-Type (application/json) <br />
-            <b>Body: </b> {"{ \"number\": \"558599999999\", \"body\": \"Sua mensagem\" }"}
+            <b>Headers: </b> X_TOKEN (token registrado) e Content-Type (application/json) <br />
+            <b>Body: </b> {"{ \"number\": \"5117007980\", \"body\": \"Su mensage\" }"}
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography className={classes.elementMargin}>
-            <b>Teste de Envio</b>
+            <b>Test de Envio</b>
           </Typography>
           {renderFormMessageText()}
         </Grid>
       </Grid>
       <Typography variant="h6" color="primary" className={classes.elementMargin}>
-        2. Mensagens de Media
+        2. Mensages de Media
       </Typography>
       <Grid container>
         <Grid item xs={12} sm={6}>
           <Typography className={classes.elementMargin} component="div">
-            <p>Seguem abaixo a lista de informações necessárias para envio das mensagens de texto:</p>
+            <p>A continuación se muestra la lista de información necesaria para enviar mensajes de texto.:</p>
             <b>Endpoint: </b> {getEndpoint()} <br />
             <b>Método: </b> POST <br />
-            <b>Headers: </b> X_TOKEN (token cadastrado) e Content-Type (multipart/form-data) <br />
+            <b>Headers: </b> X_TOKEN (token registrado) e Content-Type (multipart/form-data) <br />
             <b>FormData: </b> <br />
             <ul>
               <li>
-                <b>number: </b> 558599999999
+                <b>number: </b> 5117007980
               </li>
               <li>
-                <b>medias: </b> arquivo
+                <b>medias: </b> archivo
               </li>
             </ul>
           </Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography className={classes.elementMargin}>
-            <b>Teste de Envio</b>
+            <b>Test de Envio</b>
           </Typography>
           {renderFormMessageMedia()}
         </Grid>
