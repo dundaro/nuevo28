@@ -68,7 +68,7 @@ const ToDoList = () => {
 
     const now = new Date();
     if (editIndex >= 0) {
-      // Editar tarefa existente
+      // Editar tarea existente
       const newTasks = [...tasks];
       newTasks[editIndex] = {text: task, updatedAt: now, createdAt: newTasks[editIndex].createdAt};
       setTasks(newTasks);
