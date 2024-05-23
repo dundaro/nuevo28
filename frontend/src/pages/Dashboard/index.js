@@ -319,7 +319,7 @@ const Dashboard = () => {
       setCompanyDueDate(moment(companiesList.dueDate).format("DD/MM/yyyy"));
     } catch (e) {
       console.log("🚀 Console Log : e", e);
-      // toast.error("Não foi possível carregar a lista de registros");
+      // toast.error("No fue possible cargar a lista de registros");
     }
     setLoading(false);
   };
@@ -372,7 +372,7 @@ const Dashboard = () => {
               value={period}
               onChange={(e) => handleChangePeriod(e.target.value)}
             >
-              <MenuItem value={0}>Nenhum selecionado</MenuItem>
+              <MenuItem value={0}>Ninguno selecionado</MenuItem>
               <MenuItem value={3}>Últimos 3 dias</MenuItem>
               <MenuItem value={7}>Últimos 7 dias</MenuItem>
               <MenuItem value={15}>Últimos 15 dias</MenuItem>
@@ -525,7 +525,7 @@ const Dashboard = () => {
             </Paper>
           </Grid>
 
-          {/* ATENDIMENTOS ACONTECENDO */}
+          {/* ATENCIONES SUCEDIENDO */}
           <Grid item xs={12} sm={6} md={4}>
             <Paper
               className={classes.card2}
@@ -539,7 +539,7 @@ const Dashboard = () => {
                     variant="h6"
                     paragraph
                   >
-                    Atd. Acontecendo
+                    Atd. sucediendo
                   </Typography>
                   <Grid item>
                     <Typography
@@ -562,7 +562,7 @@ const Dashboard = () => {
             </Paper>
           </Grid>
 
-          {/* ATENDIMENTOS REALIZADOS */}
+          {/* ATENCIONES REALIZADAS */}
           <Grid item xs={12} sm={6} md={4}>
             <Paper
               className={classes.card3}
@@ -599,7 +599,7 @@ const Dashboard = () => {
             </Paper>
           </Grid>
 
-          {/* NOVOS CONTATOS */}
+          {/* NUEVOS CONTATOS */}
           <Grid item xs={12} sm={6} md={4}>
             <Paper
               className={classes.card4}
@@ -613,7 +613,7 @@ const Dashboard = () => {
                     variant="h6"
                     paragraph
                   >
-                    Novos Contatos
+                    Nuevos Contatos
                   </Typography>
                   <Grid item>
                     <Typography
@@ -636,7 +636,7 @@ const Dashboard = () => {
             </Paper>
           </Grid>
 
-          {/* T.M. DE ATENDIMENTO */}
+          {/* T.M. DE ATENDIMIENTO */}
           <Grid item xs={12} sm={6} md={4}>
             <Paper
               className={classes.card8}
@@ -650,7 +650,7 @@ const Dashboard = () => {
                     variant="h6"
                     paragraph
                   >
-                    T.M. de Atendimento
+                    T.M. de Atendimiento
                   </Typography>
                   <Grid item>
                     <Typography
